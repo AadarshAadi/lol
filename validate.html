@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Hotel Room Booking </title>
+</head>
+<h1 style="text-align:center;font-size:25px;margin-right:00px;margin-left:00px"> Hotel Room Booking</h1>
+<body>
+<form action="" method="post">
+    <fieldset>
+        <legend>Booking Details</legend></br>
+        <div>
+            <label for="name">Name (required):</label></br>
+            <input id="name" name="name" value="" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname" required>
+            <span id="name-format" class="help">Format: First name Last name</span>
+        </div>
+        <div>
+            <label>Sex:</label></br>
+           <select>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+        </div>
+ <div>
+            <label for="Age">Age (required):</label></br>
+            <input type="number" id="age" name="age" value="" required>
+        </div>
+ <div>
+            <label for="email">Email (required):</label></br>
+            <input type="email" id="email" name="email" value="" required>
+        </div>
+<h4 font size=8px;color:"black">Nationality </h4>
+           Indian:<input type="radio" name="Nationality"/>
+          Foreign:<input type="radio" name="Nationality"/></br>
+<h4 font size=8px;color:"black">ROOM COMFORTABILITY </h4>
+              AC:<input type="radio" name="ROOM SERVICES"/>
+          Non AC:<input type="radio" name="ROOM SERVICES"/></br></br>
+        <div>
+            <label for="numPersons"><abbr title="Number">No.</abbr> of Persons (required):</label></br>
+            <input type="number" min="1" max="8"required>
+           <span id="booking-format" class="help"> [Maximum 8 Persons are allowed]</span>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "Input OK";
+    } 
+} 
+</script>
+</div>
+        <div class="submit">
+                                    <input type="submit" value="Submit">
+        </div>
+    </fieldset>
+</form> 
+</body>
+</html>

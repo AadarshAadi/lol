@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="af" name="schpp" style="align-self: center;">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="hi1" name="Name"></td>
+            </tr>
+            <tr>
+                <td><button onclick="yo()">Submit</button></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><select name="District" id="ups"><option value="-1" selected>select..</option>
+                    <option value="Nalanda">NALANDA</option>
+                    <option value="UP">UP</option>
+                    <option value="Goa">GOA</option>
+                    <option value="Patna">PATNA</option></td></select>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function yo()
+        {
+            if(document.schpp.hi1.value=="")
+            {
+                alert("hi");
+            }
+        
+        }
+    </script>
+</body>
+</html>
